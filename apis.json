@@ -1,0 +1,72 @@
+{
+    "name": "Standard Chartered",
+    "description": "<p>Standard Chartered PLC is a British multinational banking and financial services company headquartered in London, England. It operates a network of more than 1,200 branches and outlets (including subsidiaries, associates and joint ventures) across more than 70 countries and employs around 87,000 people. It is a universal bank with operations in consumer, corporate and institutional banking, and treasury services. Despite its UK base, it does not conduct retail banking in the UK, and around 90% of its profits come from Asia, Africa and the Middle East.<\/p>",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/standard-charter.png",
+    "tags": [
+        "banking",
+        "financial services",
+        "general data",
+        "have api",
+        "relative data",
+        "uk banks"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/standard-chartered\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Standard Chartered",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/standard-charter.png",
+            "humanURL": "https:\/\/developer.sc.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/standard-chartered.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/standard-chartered-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Accessibility",
+            "url": "https:\/\/developer.sc.com\/cib\/#\/accessibility"
+        },
+        {
+            "type": "Applications",
+            "url": "https:\/\/developer.sc.com\/cib\/#\/showcases"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/standard-chartered-bank"
+        },
+        {
+            "type": "Documentation",
+            "url": "https:\/\/developer.sc.com\/cib\/#\/api-documentation\/3"
+        },
+        {
+            "type": "Privacy Policy",
+            "url": "https:\/\/developer.sc.com\/cib\/#\/privacy"
+        },
+        {
+            "type": "Terms of Service",
+            "url": "https:\/\/developer.sc.com\/cib\/#\/legal-notice"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/StanChart"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/developer.sc.com"
+        }
+    ]
+}
