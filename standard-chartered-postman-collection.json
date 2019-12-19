@@ -1,0 +1,441 @@
+{
+    "id": "9c69326771dcb38bf352a185258ba428",
+    "name": "Standard Chartered",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "778f79ce71a997fe3cf7e1168d5559c3",
+            "name": "Accounts",
+            "url": "httpsdeveloper.sc.com\/\/cib\/service\/s2b\/api\/v1\/banks\/scb\/accounts\/{accountId}\/{viewId}\/account",
+            "description": "The ???GetAccountBalance??? API upon successful user authentication and entitlement checks will return the various types of ???Account Balances??? applicable for the specified Account Number.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "UserId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "GroupId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "viewId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "accountId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9c69326771dcb38bf352a185258ba428",
+            "rawModeData": ""
+        },
+        {
+            "id": "3b3b5c0694e4f6b767d69d6764f5abdc",
+            "name": "Finds all support transaction types for a given account",
+            "url": "httpsdeveloper.sc.com\/\/cib\/service\/s2b\/api\/v1\/banks\/scb\/accounts\/{accountId}\/{viewId}\/transaction-request-types",
+            "description": "The ???GetTransactionTypes??? API upon successful user authentication and entitlement checks will return the supported transaction types for the specified account",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "UserId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "GroupId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "viewId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "accountId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9c69326771dcb38bf352a185258ba428",
+            "rawModeData": ""
+        },
+        {
+            "id": "d10719297214e14d8434032df1b9b067",
+            "name": "Account Details & Balances",
+            "url": "httpsdeveloper.sc.com\/\/cib\/service\/s2b\/api\/v1\/banks\/scb\/accounts\/{viewId}\/accounts",
+            "description": "List available bank accounts",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "UserId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "GroupId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "viewId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9c69326771dcb38bf352a185258ba428",
+            "rawModeData": ""
+        },
+        {
+            "id": "549c23e22d954edad542c2f4d7a3ed74",
+            "name": "Bank Code Inquiry",
+            "url": "httpsdeveloper.sc.com\/\/cib\/service\/s2b\/api\/v1\/banks\/scb\/reference\/default\/branches",
+            "description": "The ???GetBankCode??? API returns list of Bank Codes for the specified combination of ???Country???, ???City??? and ???Bank??? combination. The data will contain the ???Bank Code(s)??? as well as the address for the Bank & Branch.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9c69326771dcb38bf352a185258ba428",
+            "rawModeData": ""
+        },
+        {
+            "id": "99c3cc75a928b689c1c31e90fd46a9d2",
+            "name": "Holiday Calendar Inquiry (Country)",
+            "url": "httpsdeveloper.sc.com\/\/cib\/service\/s2b\/api\/v1\/banks\/scb\/reference\/default\/holiday-calendar\/country\/{country}",
+            "description": "The ???GetHolidayCalendar??? API returns list of holidays applicable for the specified combination of:\n<ul><li>Country<\/li><li>Date Range<\/li><\/lu>",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "country",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startDate",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "endDate",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9c69326771dcb38bf352a185258ba428",
+            "rawModeData": ""
+        },
+        {
+            "id": "1e5112e5618b9f1129c06017d173efed",
+            "name": "Holiday Calendar Inquiry (Currency)",
+            "url": "httpsdeveloper.sc.com\/\/cib\/service\/s2b\/api\/v1\/banks\/scb\/reference\/default\/holiday-calendar\/currency\/{currency}",
+            "description": "The ???GetHolidayCalendar??? API returns list of holidays applicable for the specified combination of:\n<ul><li>Currency<\/li><li>Date Range<\/li><\/lu>",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "currency",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startDate",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "endDate",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9c69326771dcb38bf352a185258ba428",
+            "rawModeData": ""
+        },
+        {
+            "id": "db5693c305899ada72c37e14f39360e1",
+            "name": "Retrieve trade finance customer profile",
+            "url": "httpsdeveloper.sc.com\/\/cib\/service\/s2b\/api\/v1\/trade\/{countryCode}\/{customerId}\/profile",
+            "description": "Retrieve trade finance customer profile",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "countryCode",
+                    "description": "ISO Country Code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "customerId",
+                    "description": "Customer Reference Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9c69326771dcb38bf352a185258ba428",
+            "rawModeData": ""
+        },
+        {
+            "id": "7474010ecbf1091ae5bbe836efef43ec",
+            "name": "Retrieve trade finance limit details",
+            "url": "httpsdeveloper.sc.com\/\/cib\/service\/s2b\/api\/v1\/trade\/{countryCode}\/{customerId}\/limits",
+            "description": "Retrieve trade finance limit details",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "countryCode",
+                    "description": "ISO Country Code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "customerId",
+                    "description": "Customer Reference Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9c69326771dcb38bf352a185258ba428",
+            "rawModeData": ""
+        },
+        {
+            "id": "78981cf0b60e462d0827f3794561f170",
+            "name": "Retrieve all trade finance transaction status for the current date (localised to tz)",
+            "url": "httpsdeveloper.sc.com\/\/cib\/service\/s2b\/api\/v1\/trade\/{countryCode}\/{customerId}\/transactions",
+            "description": "Retrieve all trade finance transaction status for the current date (localised to tz)\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "countryCode",
+                    "description": "ISO Country Code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "customerId",
+                    "description": "Customer Reference Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tz",
+                    "description": "Timezone code (ISO-8601), e.g. UTC (default) ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9c69326771dcb38bf352a185258ba428",
+            "rawModeData": ""
+        },
+        {
+            "id": "b7c4a5efceb74d3c490a27e4f17f488d",
+            "name": "Retrieve trade finance transaction status for specific transaction reference Id",
+            "url": "httpsdeveloper.sc.com\/\/cib\/service\/s2b\/api\/v1\/trade\/{countryCode}\/{customerId}\/transaction\/{transactionId}",
+            "description": "Retrieve trade finance transaction status for specific transaction reference Id\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "countryCode",
+                    "description": "ISO Country Code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "customerId",
+                    "description": "Customer Reference Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "transactionId",
+                    "description": "Transaction Reference Id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "9c69326771dcb38bf352a185258ba428",
+            "rawModeData": ""
+        }
+    ]
+}
