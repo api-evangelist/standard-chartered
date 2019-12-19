@@ -1,0 +1,519 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Standard Chartered",
+        "description": "Standard Chartered PLC is a British multinational banking and financial services company headquartered in London, England. It operates a network of more than 1,200 branches and outlets (including subsidiaries, associates and joint ventures) across more than 70 countries and employs around 87,000 people. It is a universal bank with operations in consumer, corporate and institutional banking, and treasury services. Despite its UK base, it does not conduct retail banking in the UK, and around 90% of its profits come from Asia, Africa and the Middle East.",
+        "termsOfService": "https:\/\/www.sc.com\/terms-and-conditions"
+    },
+    "servers": [
+        "httpsdeveloper.sc.com\/"
+    ],
+    "paths": {
+        "\/cib\/service\/s2b\/api\/v1\/banks\/scb\/accounts\/{accountId}\/{viewId}\/account": {
+            "get": {
+                "summary": "Accounts",
+                "description": "The ???GetAccountBalance??? API upon successful user authentication and entitlement checks will return the various types of ???Account Balances??? applicable for the specified Account Number.",
+                "operationId": "GetCibServiceS2bApiV1BanksScbAccountsAccountViewAccount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "UserId",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "GroupId",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "viewId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "accountId",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/cib\/service\/s2b\/api\/v1\/banks\/scb\/accounts\/{accountId}\/{viewId}\/transaction-request-types": {
+            "get": {
+                "summary": "Finds all support transaction types for a given account",
+                "description": "The ???GetTransactionTypes??? API upon successful user authentication and entitlement checks will return the supported transaction types for the specified account",
+                "operationId": "GetCibServiceS2bApiV1BanksScbAccountsAccountViewTransactionRequestTypes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "UserId",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "GroupId",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "viewId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "accountId",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/cib\/service\/s2b\/api\/v1\/banks\/scb\/accounts\/{viewId}\/accounts": {
+            "get": {
+                "summary": "Account Details & Balances",
+                "description": "List available bank accounts",
+                "operationId": "GetCibServiceS2bApiV1BanksScbAccountsViewAccounts",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "UserId",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "GroupId",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "viewId",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/cib\/service\/s2b\/api\/v1\/banks\/scb\/reference\/default\/branches": {
+            "post": {
+                "summary": "Bank Code Inquiry",
+                "description": "The ???GetBankCode??? API returns list of Bank Codes for the specified combination of ???Country???, ???City??? and ???Bank??? combination. The data will contain the ???Bank Code(s)??? as well as the address for the Bank & Branch.\n",
+                "operationId": "PostCibServiceS2bApiV1BanksScbReferenceDefaultBranches",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/cib\/service\/s2b\/api\/v1\/banks\/scb\/reference\/default\/holiday-calendar\/country\/{country}": {
+            "get": {
+                "summary": "Holiday Calendar Inquiry (Country)",
+                "description": "The ???GetHolidayCalendar??? API returns list of holidays applicable for the specified combination of:\n<ul><li>Country<\/li><li>Date Range<\/li><\/lu>",
+                "operationId": "GetCibServiceS2bApiV1BanksScbReferenceDefaultHolayCalendarCountryCountry",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "country",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "startDate",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "endDate",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/cib\/service\/s2b\/api\/v1\/banks\/scb\/reference\/default\/holiday-calendar\/currency\/{currency}": {
+            "get": {
+                "summary": "Holiday Calendar Inquiry (Currency)",
+                "description": "The ???GetHolidayCalendar??? API returns list of holidays applicable for the specified combination of:\n<ul><li>Currency<\/li><li>Date Range<\/li><\/lu>",
+                "operationId": "GetCibServiceS2bApiV1BanksScbReferenceDefaultHolayCalendarCurrencyCurrency",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "currency",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "startDate",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "endDate",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/cib\/service\/s2b\/api\/v1\/trade\/{countryCode}\/{customerId}\/profile": {
+            "get": {
+                "summary": "Retrieve trade finance customer profile",
+                "description": "Retrieve trade finance customer profile",
+                "operationId": "GetCibServiceS2bApiV1TradeCountrycodeCustomerProfile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "countryCode",
+                        "in": "path",
+                        "description": "ISO Country Code"
+                    },
+                    {
+                        "name": "customerId",
+                        "in": "path",
+                        "description": "Customer Reference Id"
+                    }
+                ]
+            }
+        },
+        "\/cib\/service\/s2b\/api\/v1\/trade\/{countryCode}\/{customerId}\/limits": {
+            "get": {
+                "summary": "Retrieve trade finance limit details",
+                "description": "Retrieve trade finance limit details",
+                "operationId": "GetCibServiceS2bApiV1TradeCountrycodeCustomerLimits",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "countryCode",
+                        "in": "path",
+                        "description": "ISO Country Code"
+                    },
+                    {
+                        "name": "customerId",
+                        "in": "path",
+                        "description": "Customer Reference Id"
+                    }
+                ]
+            }
+        },
+        "\/cib\/service\/s2b\/api\/v1\/trade\/{countryCode}\/{customerId}\/transactions": {
+            "get": {
+                "summary": "Retrieve all trade finance transaction status for the current date (localised to tz)",
+                "description": "Retrieve all trade finance transaction status for the current date (localised to tz)\n",
+                "operationId": "GetCibServiceS2bApiV1TradeCountrycodeCustomerTransactions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "countryCode",
+                        "in": "path",
+                        "description": "ISO Country Code"
+                    },
+                    {
+                        "name": "customerId",
+                        "in": "path",
+                        "description": "Customer Reference Id"
+                    },
+                    {
+                        "name": "tz",
+                        "in": "query",
+                        "description": "Timezone code (ISO-8601), e.g. UTC (default) "
+                    }
+                ]
+            }
+        },
+        "\/cib\/service\/s2b\/api\/v1\/trade\/{countryCode}\/{customerId}\/transaction\/{transactionId}": {
+            "get": {
+                "summary": "Retrieve trade finance transaction status for specific transaction reference Id",
+                "description": "Retrieve trade finance transaction status for specific transaction reference Id\n",
+                "operationId": "GetCibServiceS2bApiV1TradeCountrycodeCustomerTransactionTransaction",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "countryCode",
+                        "in": "path",
+                        "description": "ISO Country Code"
+                    },
+                    {
+                        "name": "customerId",
+                        "in": "path",
+                        "description": "Customer Reference Id"
+                    },
+                    {
+                        "name": "transactionId",
+                        "in": "path",
+                        "description": "Transaction Reference Id"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "OpenApiAccount": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "label": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "number": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "owners": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "swift_bic": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "bank_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "iban": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "OpenApiAccountBalance": {
+                "type": "object",
+                "properties": {
+                    "currency": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lastUpdated": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "amount": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "OpenApiAccountOwner": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "provider": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "display_name": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "OpenApiAddress": {
+                "type": "object",
+                "properties": {
+                    "line_1": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "line_2": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "line_3": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "city": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "state": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "postcode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "country": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "OpenApiBankBranch": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "swiftCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "country": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "routingCode": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "OpenApiHoliday": {
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "currency": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "country": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "OpenApiHolidays": {
+                "type": "object",
+                "properties": {
+                    "holidays": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "OpenApiLicense": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "OpenApiMeta": {
+                "type": "object"
+            },
+            "customer": {
+                "type": "object",
+                "properties": {
+                    "customerId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "customerName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "customerBookingLocation": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "customerDomicileCountry": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "limits": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "transactions": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "transactionList": {
+                "type": "object",
+                "properties": {
+                    "customerId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "customerName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "updateAsofTime": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "transactionsInProgress": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "releasedTransactions": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "transaction": {
+                "type": "object",
+                "properties": {
+                    "transactionsCustomerId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "transactionCustomerName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "updateAsofTime": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "transactionsInProgress": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "releasedTransactions": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "limits": {
+                "type": "object",
+                "properties": {
+                    "customerLimitDetails": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "coBorrowerLimitDetails": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
