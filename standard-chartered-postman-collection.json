@@ -1,5 +1,5 @@
 {
-    "id": "9c69326771dcb38bf352a185258ba428",
+    "id": "0cba71d02626a75501842a635d70ca80",
     "name": "Standard Chartered",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "778f79ce71a997fe3cf7e1168d5559c3",
+            "id": "6eb8e97e1b8b71917b0e6e809af2cb9e",
             "name": "Accounts",
             "url": "httpsdeveloper.sc.com\/\/cib\/service\/s2b\/api\/v1\/banks\/scb\/accounts\/{accountId}\/{viewId}\/account",
             "description": "The ???GetAccountBalance??? API upon successful user authentication and entitlement checks will return the various types of ???Account Balances??? applicable for the specified Account Number.",
@@ -58,11 +58,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9c69326771dcb38bf352a185258ba428",
+            "collectionId": "0cba71d02626a75501842a635d70ca80",
             "rawModeData": ""
         },
         {
-            "id": "3b3b5c0694e4f6b767d69d6764f5abdc",
+            "id": "ff1cd3233d32a15f7cda3cd4ca18e11c",
             "name": "Finds all support transaction types for a given account",
             "url": "httpsdeveloper.sc.com\/\/cib\/service\/s2b\/api\/v1\/banks\/scb\/accounts\/{accountId}\/{viewId}\/transaction-request-types",
             "description": "The ???GetTransactionTypes??? API upon successful user authentication and entitlement checks will return the supported transaction types for the specified account",
@@ -110,11 +110,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9c69326771dcb38bf352a185258ba428",
+            "collectionId": "0cba71d02626a75501842a635d70ca80",
             "rawModeData": ""
         },
         {
-            "id": "d10719297214e14d8434032df1b9b067",
+            "id": "e6c6ee2d0ce009338f0919fa886e1d11",
             "name": "Account Details & Balances",
             "url": "httpsdeveloper.sc.com\/\/cib\/service\/s2b\/api\/v1\/banks\/scb\/accounts\/{viewId}\/accounts",
             "description": "List available bank accounts",
@@ -155,11 +155,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9c69326771dcb38bf352a185258ba428",
+            "collectionId": "0cba71d02626a75501842a635d70ca80",
             "rawModeData": ""
         },
         {
-            "id": "549c23e22d954edad542c2f4d7a3ed74",
+            "id": "d1040c7487a7efbdbee06d34a5fdc8d9",
             "name": "Bank Code Inquiry",
             "url": "httpsdeveloper.sc.com\/\/cib\/service\/s2b\/api\/v1\/banks\/scb\/reference\/default\/branches",
             "description": "The ???GetBankCode??? API returns list of Bank Codes for the specified combination of ???Country???, ???City??? and ???Bank??? combination. The data will contain the ???Bank Code(s)??? as well as the address for the Bank & Branch.\n",
@@ -178,11 +178,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9c69326771dcb38bf352a185258ba428",
+            "collectionId": "0cba71d02626a75501842a635d70ca80",
             "rawModeData": ""
         },
         {
-            "id": "99c3cc75a928b689c1c31e90fd46a9d2",
+            "id": "14ec8aee071c5d59f259aad823c190a8",
             "name": "Holiday Calendar Inquiry (Country)",
             "url": "httpsdeveloper.sc.com\/\/cib\/service\/s2b\/api\/v1\/banks\/scb\/reference\/default\/holiday-calendar\/country\/{country}",
             "description": "The ???GetHolidayCalendar??? API returns list of holidays applicable for the specified combination of:\n<ul><li>Country<\/li><li>Date Range<\/li><\/lu>",
@@ -223,11 +223,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9c69326771dcb38bf352a185258ba428",
+            "collectionId": "0cba71d02626a75501842a635d70ca80",
             "rawModeData": ""
         },
         {
-            "id": "1e5112e5618b9f1129c06017d173efed",
+            "id": "ded1b2b7b59f9999c6db03bd92d6b43f",
             "name": "Holiday Calendar Inquiry (Currency)",
             "url": "httpsdeveloper.sc.com\/\/cib\/service\/s2b\/api\/v1\/banks\/scb\/reference\/default\/holiday-calendar\/currency\/{currency}",
             "description": "The ???GetHolidayCalendar??? API returns list of holidays applicable for the specified combination of:\n<ul><li>Currency<\/li><li>Date Range<\/li><\/lu>",
@@ -268,11 +268,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9c69326771dcb38bf352a185258ba428",
+            "collectionId": "0cba71d02626a75501842a635d70ca80",
             "rawModeData": ""
         },
         {
-            "id": "db5693c305899ada72c37e14f39360e1",
+            "id": "cd40bd56847214c27b2d4294d9ee09b3",
             "name": "Retrieve trade finance customer profile",
             "url": "httpsdeveloper.sc.com\/\/cib\/service\/s2b\/api\/v1\/trade\/{countryCode}\/{customerId}\/profile",
             "description": "Retrieve trade finance customer profile",
@@ -306,11 +306,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9c69326771dcb38bf352a185258ba428",
+            "collectionId": "0cba71d02626a75501842a635d70ca80",
             "rawModeData": ""
         },
         {
-            "id": "7474010ecbf1091ae5bbe836efef43ec",
+            "id": "7d3a8933a2077ba48207723296467543",
             "name": "Retrieve trade finance limit details",
             "url": "httpsdeveloper.sc.com\/\/cib\/service\/s2b\/api\/v1\/trade\/{countryCode}\/{customerId}\/limits",
             "description": "Retrieve trade finance limit details",
@@ -344,11 +344,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9c69326771dcb38bf352a185258ba428",
+            "collectionId": "0cba71d02626a75501842a635d70ca80",
             "rawModeData": ""
         },
         {
-            "id": "78981cf0b60e462d0827f3794561f170",
+            "id": "d23f420375c0f6f6bb31fd6f23665dda",
             "name": "Retrieve all trade finance transaction status for the current date (localised to tz)",
             "url": "httpsdeveloper.sc.com\/\/cib\/service\/s2b\/api\/v1\/trade\/{countryCode}\/{customerId}\/transactions",
             "description": "Retrieve all trade finance transaction status for the current date (localised to tz)\n",
@@ -389,11 +389,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9c69326771dcb38bf352a185258ba428",
+            "collectionId": "0cba71d02626a75501842a635d70ca80",
             "rawModeData": ""
         },
         {
-            "id": "b7c4a5efceb74d3c490a27e4f17f488d",
+            "id": "833910faf5dc2dc8539bf97412144819",
             "name": "Retrieve trade finance transaction status for specific transaction reference Id",
             "url": "httpsdeveloper.sc.com\/\/cib\/service\/s2b\/api\/v1\/trade\/{countryCode}\/{customerId}\/transaction\/{transactionId}",
             "description": "Retrieve trade finance transaction status for specific transaction reference Id\n",
@@ -434,7 +434,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9c69326771dcb38bf352a185258ba428",
+            "collectionId": "0cba71d02626a75501842a635d70ca80",
             "rawModeData": ""
         }
     ]
