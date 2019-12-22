@@ -10,8 +10,8 @@
         "relative data",
         "uk banks"
     ],
-    "created": "2019-12-19",
-    "modified": "2019-12-19",
+    "created": "2019-12-21",
+    "modified": "2019-12-21",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/standard-chartered\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -25,17 +25,21 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/standard-chartered.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/standard-chartered\/master\/standard-chartered-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/standard-chartered-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/standard-chartered.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "Accessibility",
             "url": "https:\/\/developer.sc.com\/cib\/#\/accessibility"
