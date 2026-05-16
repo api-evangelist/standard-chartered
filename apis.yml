@@ -9,9 +9,21 @@ tags:
   - Global Banking
 description: 'A British multinational banking and financial services company headquartered in London with a strong focus on Asia, Africa, and the Middle East. Provides corporate, institutional, and consumer banking across more than 50 markets globally.'
 created: '2026-05-05'
-modified: '2026-05-05'
+modified: '2026-05-16'
 specificationVersion: '0.19'
 apis: []
 common:
   - type: Website
     url: https://www.sc.com/
+  - type: About
+    url: https://www.sc.com/en/about/
+  - type: Investors
+    url: https://www.sc.com/en/investors/
+  - type: News
+    url: https://www.sc.com/en/press-releases/
+  - type: Careers
+    url: https://www.sc.com/en/careers/
+maintainers:
+  - FN: API Evangelist
+    email: info@apievangelist.com
+    X: '@apievangelist'

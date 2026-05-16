@@ -13,5 +13,11 @@ A British multinational banking and financial services company headquartered in 
 ## Timestamps
 
 - **Created:** 2026-05-05
-- **Modified:** 2026-05-05
+- **Modified:** 2026-05-16
+
+## Status
+
+Standard Chartered does not currently publish a public, self-service API developer portal. The bank's API surface is offered to corporate, institutional, and partner clients through bilateral integrations and select market-specific open banking programs (e.g., Hong Kong HKMA Open API, Singapore SGFinDex), rather than a unified global developer portal.
+
+This repository is being tracked for future updates when public documentation becomes available.
 
