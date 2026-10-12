@@ -1,5 +1,5 @@
 generated: '2026-10-12'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/standard-chartered/integrations
 - https://n8n.io/integrations/standard-chartered/
@@ -9,8 +9,33 @@ checked:
 - https://composio.dev/toolkits/standard-chartered
 - https://monid.ai/tools/standard-chartered
 - https://n8n.io/integrations/standard-chartered/
+- https://www.esma.europa.eu/sites/default/files/2024-12/CASPS.csv
 - https://zapier.com/apps/standard-chartered/integrations
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: MiCA (EU)
+  partner: null
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.esma.europa.eu/sites/default/files/2024-12/CASPS.csv
+  contract_reference:
+    register: 'ESMA interim MiCA register: crypto-asset service providers (CASPS.csv)'
+    spec_file: null
+    role: authorised-casp
+    registered_name: Standard Chartered Luxembourg S.A.
+    register_id: 213800HAR45C9K18O294
+    competent_authority: Commission de Surveillance du Secteur Financier (CSSF)
+    home_member_state: LU
+    authorised: 25/06/2026
+    services:
+    - a. providing custody and administration of crypto-assets on behalf of clients
+    - j. providing transfer services for crypto-assets on behalf of clients
+    matched_domain: sc.com
+    detected_by: sweep-crypto.py
+    detected: '2026-10-13'
+  detected_by: sweep-crypto.py
+  first_seen: '2026-10-13'
 templates: []
