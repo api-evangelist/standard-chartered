@@ -10,6 +10,9 @@ checked:
 - https://eservices.mas.gov.sg/fid
 - https://monid.ai/tools/standard-chartered
 - https://n8n.io/integrations/standard-chartered/
+- https://prod.registry.ondc.org/lookup
+- https://sahamati.org.in/account-aggregators-in-india/
+- https://sahamati.org.in/fip-fiu-in-account-aggregators-ecosystem/
 - https://www.bi.go.id/id/layanan/informasi-perizinan/sistem-pembayaran/default.aspx
 - https://www.bnm.gov.my/list-of-regulatees
 - https://www.esma.europa.eu/sites/default/files/2024-12/CASPS.csv
@@ -138,4 +141,44 @@ edges:
     detected: '2026-10-18'
   detected_by: sweep-gulf-asean-open-finance.py
   first_seen: '2026-10-18'
+- partner_name: Sahamati Account Aggregator ecosystem (FIP / FIU)
+  partner: null
+  partner_match: register
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://sahamati.org.in/fip-fiu-in-account-aggregators-ecosystem/
+  category: Account Aggregator FIP / FIU (India Stack, DEPA)
+  contract_reference:
+    register: Sahamati FIPs & FIUs in the AA ecosystem (sahamati.org.in/fip-fiu-in-account-aggregators-ecosystem)
+    standard: RBI NBFC-Account Aggregator framework (ReBIT AA technical standards)
+    spec_file: null
+    role: aa-fip-fiu
+    registered_name: Standard Chartered Bank
+    register_id: Standard Chartered Bank
+    licence_type: Foreign Bank
+    regulator: RBI
+    engagement_stage: Live
+    implementation_stages:
+      FIP:
+      - Live
+      FIU:
+      - Evaluating
+    matched_domain: sc.com
+    matched_by: domain
+    identity: wikidata Q61931875 'Standard Chartered Singapore' P856 https://www.sc.com/sg/
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+    certified_products:
+    - product: AA FIP (production Central Registry)
+      role: FIP
+      stage: Live
+      lapsed: false
+    signal_note: certified_products = one per ROLE (FIP / FIU) at stage Live or Live-enabled (listed in the production
+      Central Registry after ReBIT-standard certification); Testing / In-Development are participation only. The
+      table has no lapse data, so lapsed is false
+    detected_by: sweep-india-stack.py
+    detected: '2026-10-19'
+  detected_by: sweep-india-stack.py
+  first_seen: '2026-10-19'
 templates: []
