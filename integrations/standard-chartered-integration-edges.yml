@@ -7,10 +7,14 @@ source:
 - https://monid.ai/tools/standard-chartered
 checked:
 - https://composio.dev/toolkits/standard-chartered
+- https://eservices.mas.gov.sg/fid
 - https://monid.ai/tools/standard-chartered
 - https://n8n.io/integrations/standard-chartered/
+- https://www.bi.go.id/id/layanan/informasi-perizinan/sistem-pembayaran/default.aspx
+- https://www.bnm.gov.my/list-of-regulatees
 - https://www.esma.europa.eu/sites/default/files/2024-12/CASPS.csv
 - https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
+- https://www.ojk.go.id/id/kanal/iknb/data-dan-statistik/direktori/fintech/Default.aspx
 - https://zapier.com/apps/standard-chartered/integrations
 summary: null
 marketplace_apps: []
@@ -79,4 +83,59 @@ edges:
     detected: '2026-10-15'
   detected_by: sweep-capital-markets.py
   first_seen: '2026-10-15'
+- partner_name: Bank Indonesia payment-system licence register
+  partner: null
+  partner_match: register
+  type: register
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.bi.go.id/id/layanan/informasi-perizinan/sistem-pembayaran/default.aspx
+  category: open finance / payments (Indonesia)
+  contract_reference:
+    register: Bank Indonesia payment-system licence register
+    spec_file: null
+    standard: Bank Indonesia payment-system licensing (PBI 22/23/2020; SNAP applies to licensees)
+    role: licensed-participant
+    registrations:
+    - registered_name: Standard Chartered Bank
+      licences:
+      - Payment Service Provider - License Category I
+      matched_domain: sc.com
+      matched_by: domain
+      evidence: https://www.bi.go.id/id/layanan/informasi-perizinan/sistem-pembayaran/default.aspx
+      product: Penerbit Kartu ATM
+      decision: ATM0320
+    signal_note: 'participation only: a regulator licence; no API conformance is published by this register'
+    detected_by: sweep-gulf-asean-open-finance.py
+    detected: '2026-10-18'
+  detected_by: sweep-gulf-asean-open-finance.py
+  first_seen: '2026-10-18'
+- partner_name: MAS Financial Institutions Directory
+  partner: null
+  partner_match: register
+  type: register
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://eservices.mas.gov.sg/fid
+  category: open finance (Singapore)
+  contract_reference:
+    register: MAS Financial Institutions Directory
+    spec_file: null
+    standard: MAS licensing (Banking Act / Payment Services Act, Singapore)
+    role: licensed-participant
+    registrations:
+    - registered_name: STANDARD CHARTERED BANK (SINGAPORE) LIMITED
+      licences:
+      - Qualifying Full Bank
+      matched_domain: sc.com
+      matched_by: domain
+      evidence: https://eservices.mas.gov.sg/fid/institution/detail/2623-STANDARD-CHARTERED-BANK-SINGAPORE-LIMITED
+      register_id: 2623-STANDARD-CHARTERED-BANK-SINGAPORE-LIMITED
+    signal_note: 'participation only: a regulator licence; no API conformance is published by this register'
+    detected_by: sweep-gulf-asean-open-finance.py
+    detected: '2026-10-18'
+  detected_by: sweep-gulf-asean-open-finance.py
+  first_seen: '2026-10-18'
 templates: []
