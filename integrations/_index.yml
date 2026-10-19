@@ -68,6 +68,46 @@
     detected: '2026-10-15'
   status: not-a-workflow
   arazzo: null
+- slug: standard-chartered-sahamati-account-aggregator-ecosystem-fip-fiu
+  label: Sahamati Account Aggregator ecosystem (FIP / FIU)
+  partner_name: Sahamati Account Aggregator ecosystem (FIP / FIU)
+  category: Account Aggregator FIP / FIU (India Stack, DEPA)
+  type: contract
+  channel: regulator-register
+  evidence: https://sahamati.org.in/fip-fiu-in-account-aggregators-ecosystem/
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: Sahamati FIPs & FIUs in the AA ecosystem (sahamati.org.in/fip-fiu-in-account-aggregators-ecosystem)
+    standard: RBI NBFC-Account Aggregator framework (ReBIT AA technical standards)
+    spec_file: null
+    role: aa-fip-fiu
+    registered_name: Standard Chartered Bank
+    register_id: Standard Chartered Bank
+    licence_type: Foreign Bank
+    regulator: RBI
+    engagement_stage: Live
+    implementation_stages:
+      FIP:
+      - Live
+      FIU:
+      - Evaluating
+    matched_domain: sc.com
+    matched_by: domain
+    identity: wikidata Q61931875 'Standard Chartered Singapore' P856 https://www.sc.com/sg/
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+    certified_products:
+    - product: AA FIP (production Central Registry)
+      role: FIP
+      stage: Live
+      lapsed: false
+    signal_note: certified_products = one per ROLE (FIP / FIU) at stage Live or Live-enabled (listed in the production
+      Central Registry after ReBIT-standard certification); Testing / In-Development are participation only. The
+      table has no lapse data, so lapsed is false
+    detected_by: sweep-india-stack.py
+    detected: '2026-10-19'
+  status: not-a-workflow
+  arazzo: null
 - slug: standard-chartered-bank-indonesia-payment-system-licence-register
   label: Bank Indonesia payment-system licence register
   partner_name: Bank Indonesia payment-system licence register
@@ -121,45 +161,5 @@
     signal_note: 'participation only: a regulator licence; no API conformance is published by this register'
     detected_by: sweep-gulf-asean-open-finance.py
     detected: '2026-10-18'
-  status: not-a-workflow
-  arazzo: null
-- slug: standard-chartered-sahamati-account-aggregator-ecosystem-fip-fiu
-  label: Sahamati Account Aggregator ecosystem (FIP / FIU)
-  partner_name: Sahamati Account Aggregator ecosystem (FIP / FIU)
-  category: Account Aggregator FIP / FIU (India Stack, DEPA)
-  type: contract
-  channel: regulator-register
-  evidence: https://sahamati.org.in/fip-fiu-in-account-aggregators-ecosystem/
-  source: edge
-  relationship: standard-participant
-  contract_reference:
-    register: Sahamati FIPs & FIUs in the AA ecosystem (sahamati.org.in/fip-fiu-in-account-aggregators-ecosystem)
-    standard: RBI NBFC-Account Aggregator framework (ReBIT AA technical standards)
-    spec_file: null
-    role: aa-fip-fiu
-    registered_name: Standard Chartered Bank
-    register_id: Standard Chartered Bank
-    licence_type: Foreign Bank
-    regulator: RBI
-    engagement_stage: Live
-    implementation_stages:
-      FIP:
-      - Live
-      FIU:
-      - Evaluating
-    matched_domain: sc.com
-    matched_by: domain
-    identity: wikidata Q61931875 'Standard Chartered Singapore' P856 https://www.sc.com/sg/
-    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
-    certified_products:
-    - product: AA FIP (production Central Registry)
-      role: FIP
-      stage: Live
-      lapsed: false
-    signal_note: certified_products = one per ROLE (FIP / FIU) at stage Live or Live-enabled (listed in the production
-      Central Registry after ReBIT-standard certification); Testing / In-Development are participation only. The
-      table has no lapse data, so lapsed is false
-    detected_by: sweep-india-stack.py
-    detected: '2026-10-19'
   status: not-a-workflow
   arazzo: null
